@@ -1,0 +1,39 @@
+[editable]
+file = "placeholder/layout.txt"
+==
+<div class = "top-nav">
+    <nav>
+        <ul class="nav">
+            <li>
+                <a class = "nav_button" href="#leftpanel">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <li class="active nav_padding"><a href="index.html">Kshatriya</a></li>
+        </ul>
+    </nav>  
+</div>
+{% partial 'site/sidebar' %}
+<header class = "header">
+    <div>
+        <div class = "inner-header">
+            <img src="{{ 'themes/kshatriya/assets/images/placeholder.jpg'|app }}" class = "header-image" alt = "Reluctant Beast, &copy;Kouzou Omori" title = "Reluctant Beast, &copy;Kouzou Omori Of Mobile Suit Gundam UC -Bande Dessinee"/>
+            <h1>
+                <img class="header_logo" src="{{ 'themes/kshatriya/assets/images/Kshatriya_Logo.svg'|app }}">
+                <span class = "index">
+                    <span>
+                        <span class = "grey"><?php [editable] ?>
+                            <span class = "title">{% component 'editable' file="header/header_small.txt" %}</span>
+                            <span class='spacer'></span>
+                        </span>
+                        <span class ='spacing'><br/></span><span class='spacer'></span>
+                        <span class = "headline">{% component 'editable' file="header/headline.txt" %}</span>
+                    </span>
+                </span>
+            </h1>
+        </div>
+        <div class = "header-buttons">
+            <a class="button button-group button-group-left" href="https://github.com/twiggyrj" role="button">GitHub</a><a class="button button-group button-group-right" href="https://twitter.com/twiggyrj" role="button">Twitter</a>
+        </div>
+    </div>
+</header>
